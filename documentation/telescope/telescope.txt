@@ -5,9 +5,10 @@ Laravel Telescope es una herramienta de depuración y monitorización para aplic
 
 Simulamos la instalación para ver si no hay ningún conflicto 
 👉 composer require --dry-run laravel/telescope
+👉 composer require --dry-run spatie/laravel-permission
 
 Si no hay ningún conflicto, se procede a instalar de la manera convencional.
-👉 composer require laravel/telescope
+👉 composer require laravel/telescope --dev
 
 👉 php artisan telescope:install
 El comando php artisan telescope:install en Laravel se utiliza para instalar y configurar Laravel Telescope en tu aplicación. 

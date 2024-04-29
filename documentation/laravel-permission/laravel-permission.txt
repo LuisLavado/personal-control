@@ -34,3 +34,5 @@ Cuando utilizas spatie/laravel-permission, se crean varias tablas en tu base de 
     - role_id: ID del rol.
 
 Estas tablas y sus relaciones se utilizan para asignar roles y permisos a los usuarios y para verificar los permisos de acceso en tu aplicación Laravel. Por ejemplo, puedes asignar roles a usuarios específicos en la tabla model_has_roles, y luego asignar permisos a esos roles en la tabla role_has_permissions. De esta manera, puedes controlar qué acciones pueden realizar los usuarios en tu aplicación según los roles y permisos que se les hayan asignado.
+
+composer show spatie/laravel-permission
