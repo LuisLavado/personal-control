@@ -1,0 +1,10 @@
+👉 php artisan migrate
+
+👉 php artisan make:migration add_columns_to_roles_table --table=roles
+👉 php artisan make:migration add_columns_to_permissions_table --table=permissions
+👉 php artisan make:migration create_menus_table
+👉 php artisan make:migration add_menu_id_to_model_has_permissions_table --table=model_has_permissions
+👉 php artisan make:migration add_menu_id_to_role_has_permissions_table --table=role_has_permissions
+👉 php artisan make:migration create_menu_has_permissions_table
+👉 
+👉 

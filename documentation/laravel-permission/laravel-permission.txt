@@ -1,0 +1,36 @@
+Laravel es un popular framework de PHP para el desarrollo de aplicaciones web, y spatie/laravel-permission es una biblioteca que proporciona un sistema de control de acceso basado en roles y permisos para aplicaciones Laravel.
+
+Cuando utilizas spatie/laravel-permission, se crean varias tablas en tu base de datos para gestionar roles, permisos y relaciones entre usuarios, roles y permisos. A continuación, te proporcionaré una descripción de cada tabla y sus respectivas columnas:
+
+1. users:
+    - id: Identificador único del usuario.
+    - name: Nombre del usuario.
+    - email: Correo electrónico del usuario.
+    - password: Contraseña del usuario (generalmente encriptada).
+    - remember_token: Token para recordar la sesión del usuario (opcional).
+
+2. roles:
+    - id: Identificador único del rol.
+    - name: Nombre del rol.
+    - guard_name: Nombre del guard utilizado por el paquete (generalmente "web").
+
+3. permissions:
+    - id: Identificador único del permiso.
+    - name: Nombre del permiso.
+    - guard_name: Nombre del guard utilizado por el paquete (generalmente "web").
+
+4. model_has_roles: Se asignan Roles a los usuarios
+    - role_id: ID del rol.
+    - model_type: Tipo del modelo al que está asignado el rol (por lo general, será App\Models\User).
+    - model_id: ID del modelo al que está asignado el rol.
+
+5. model_has_permissions: Se asignan Permisos a los usuarios
+    - permission_id: ID del permiso.
+    - model_type: Tipo del modelo al que está asignado el permiso (por lo general, será App\Models\User).
+    - model_id: ID del modelo al que está asignado el permiso.
+
+6. role_has_permissions:
+    - permission_id: ID del permiso.
+    - role_id: ID del rol.
+
+Estas tablas y sus relaciones se utilizan para asignar roles y permisos a los usuarios y para verificar los permisos de acceso en tu aplicación Laravel. Por ejemplo, puedes asignar roles a usuarios específicos en la tabla model_has_roles, y luego asignar permisos a esos roles en la tabla role_has_permissions. De esta manera, puedes controlar qué acciones pueden realizar los usuarios en tu aplicación según los roles y permisos que se les hayan asignado.

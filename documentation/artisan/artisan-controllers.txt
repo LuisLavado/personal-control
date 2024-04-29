@@ -1,0 +1,13 @@
+👉 php artisan make:controller Security/UserController -r --model=User
+👉 php artisan make:controller Security/RoleController -r
+👉 php artisan make:controller Security/PermissionController -r
+👉 
+👉 
+👉 
+👉 php artisan make:controller UserController -r --model=User
+👉 php artisan make:controller RoleController -r
+👉 php artisan make:controller PermissionController -r
+
+
+
+👉 php artisan make:controller Seguridad/RolController

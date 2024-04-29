@@ -1,0 +1,22 @@
+👉 php artisan make:livewire Menu/SidebarComponent
+@livewire('menu.sidebar-component')
+
+👉 php artisan make:livewire Security/UserManagement
+@livewire('security.user-management')
+👉 php artisan make:livewire Security/UserForm
+@livewire('security.user-form')
+
+👉 php artisan make:livewire Security/RoleManagement
+@livewire('security.role-management')
+👉 php artisan make:livewire Security/RoleForm
+@livewire('security.role-form')
+
+👉 php artisan make:livewire Security/PermissionComponent
+@livewire('security.permission-component')
+
+👉 php artisan make:livewire Security/PermissionManagement
+@livewire('security.permission-management')
+👉 php artisan make:livewire Security/PermissionForm
+@livewire('security.permission-form')
+
+php artisan make:livewire seguridad/roles

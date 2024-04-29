@@ -1,0 +1,2 @@
+👉 php artisan make:seeder RolesAndPermissionsSeeder
+👉 php artisan make:seeder UserRolePermissionSeeder
